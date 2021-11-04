@@ -11,5 +11,6 @@ setcookie("ad", $uye, strtotime("+1 hours"));
 
 //Çerezi okuyacak dosyaya link verildi.
 echo '<a href="oku.php">Çerezleri Oku </a>';
+echo '<a href="cikis.php">Çıkış Yap</a>';
 
  ?>

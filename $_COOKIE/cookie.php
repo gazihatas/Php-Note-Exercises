@@ -17,8 +17,16 @@
 #=> $_COOKIE değişkeni atanmış bir çerezi okumak için kullanılır.
 #=> Çerezler setcookie() fonksiyonu ile atanır.
 
+COOKIE atama işlemi :
+
 setcookie(anahtar, değer, süre, yol, domain, https, http);
 setcookie(key, value, path, time, domain, https, http);
+
+COOKIE Silme işlemi:
+Çerezi silmek için geçerlilik süresine geçmiş bir süre vermeniz yeterlidir.
+Örneğin atanan sürenin önüne - koyarak bunu sağlayabilirsin.
+setcookie("Test","", time() - 3600);
+Aynı şeyi strtotime("-1 hours");
 
 Not: Çerez ataması öncesinde hiçbir şey ekrana yazdırılmaz.
 Aksi taktirde çerez ataması yapılmaz ve PHP header üst bilgi uyarısı verecektir.
