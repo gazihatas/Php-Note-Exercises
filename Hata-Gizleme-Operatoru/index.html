@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Hata Gizleme Operatörü</h1>
+    <p>
+      Php'de hataların ekrana yazdırılmamsını engellemek için <b>@</b> hata gizleme öperatörü kullanılmaktadır.
+      &nbsp
+      <a href="gizle.php">Örnek</a>
+    </p>
+
+    <p>
+      Örnek
+      <pre>
+        <?php
+        $bolme = @(8/0);
+        echo $bolme;
+        echo '<br>';
+        echo 34*2;
+        ?>
+      </pre>
+    </p>
+  </body>
+</html>
