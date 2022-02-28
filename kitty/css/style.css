@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+/*
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  background: #333;
+  background-image: linear-gradient(to bottom left, #969191, #000);
+}
+*/
+
+
+.acontainer {
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+}
+.apanel:nth-of-type(1) {
+  background-image: url("../images/pisi3.jpg");
+}
+
+.apanel:nth-of-type(2) {
+  background-image: url("../images/pisi4.jpg");
+}
+.apanel:nth-of-type(3) {
+  background-image: url("../images/pisi6o.jpg");
+}
+.apanel:nth-of-type(4) {
+  background-image: url("../images/pisiselaleyatay.jpg");
+}
+.apanel:nth-of-type(5) {
+  background-image: url("../images/pisiyatayanıtkabie.jpg");
+}
+
+.apanel {
+  /* background-size: auto 100%; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: all 0.7s ease-in;
+  box-shadow: 3px 15px 7px rgba(0, 0, 0, 0.2);
+}
+
+.apanel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+  padding: 0 0 0 2rem;
+}
+
+.apanel.active {
+  flex: 5;
+}
+
+.apanel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 550px) {
+  .acontainer {
+    width: 100vw;
+  }
+
+  .apanel:nth-of-type(4),
+  .apanel:nth-of-type(5) {
+    display: none;
+  }
+}
